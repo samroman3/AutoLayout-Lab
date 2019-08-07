@@ -20,40 +20,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xdx-nO-SUI">
-                                <rect key="frame" x="0.0" y="59" width="209" height="195"/>
+                                <rect key="frame" x="0.0" y="246" width="414" height="414"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gid-hk-LKx">
+                                        <rect key="frame" x="103" y="103" width="208" height="208"/>
+                                        <color key="backgroundColor" red="0.68044549226760864" green="0.15786802768707275" blue="0.84710609912872314" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="0.48639786243438721" green="0.88015580177307129" blue="0.76469618082046509" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gid-hk-LKx">
-                                <rect key="frame" x="209" y="59" width="208" height="803"/>
-                                <color key="backgroundColor" red="0.68044549226760864" green="0.15786802768707275" blue="0.84710609912872314" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoe-Fm-kcy">
-                                <rect key="frame" x="0.0" y="357" width="209" height="209"/>
-                                <color key="backgroundColor" red="0.48639786239999999" green="0.88015580179999997" blue="0.76469618080000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RL6-dx-VDQ">
-                                <rect key="frame" x="0.0" y="653" width="209" height="209"/>
-                                <color key="backgroundColor" red="0.48639786239999999" green="0.88015580179999997" blue="0.76469618080000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="gid-hk-LKx" firstAttribute="top" secondItem="Xdx-nO-SUI" secondAttribute="top" constant="103" id="08d-Zs-nuR"/>
+                                    <constraint firstAttribute="height" constant="414" id="ITk-3N-Jfa"/>
+                                    <constraint firstItem="gid-hk-LKx" firstAttribute="leading" secondItem="Xdx-nO-SUI" secondAttribute="leading" constant="103" id="ROf-wi-aqc"/>
+                                    <constraint firstAttribute="width" constant="414" id="dxh-yl-y2n"/>
+                                    <constraint firstItem="gid-hk-LKx" firstAttribute="centerY" secondItem="Xdx-nO-SUI" secondAttribute="centerY" id="ft7-fW-RXy"/>
+                                    <constraint firstItem="gid-hk-LKx" firstAttribute="centerX" secondItem="Xdx-nO-SUI" secondAttribute="centerX" id="gof-gs-dnQ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hoe-Fm-kcy" firstAttribute="leading" secondItem="Xdx-nO-SUI" secondAttribute="leading" id="13y-EZ-8SA"/>
-                            <constraint firstItem="hoe-Fm-kcy" firstAttribute="leading" secondItem="RL6-dx-VDQ" secondAttribute="leading" id="7rM-Uf-hhv"/>
-                            <constraint firstItem="hoe-Fm-kcy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GJy-lL-BFq"/>
-                            <constraint firstItem="hoe-Fm-kcy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="357" id="GqZ-ho-sJx"/>
-                            <constraint firstItem="gid-hk-LKx" firstAttribute="top" secondItem="Xdx-nO-SUI" secondAttribute="top" id="Iuj-4u-3HO"/>
-                            <constraint firstItem="gid-hk-LKx" firstAttribute="leading" secondItem="Xdx-nO-SUI" secondAttribute="trailing" id="Kkx-iN-kiy"/>
-                            <constraint firstItem="RL6-dx-VDQ" firstAttribute="bottom" secondItem="gid-hk-LKx" secondAttribute="bottom" id="LcL-m1-TMi"/>
-                            <constraint firstItem="hoe-Fm-kcy" firstAttribute="trailing" secondItem="Xdx-nO-SUI" secondAttribute="trailing" id="Vly-MO-QH9"/>
-                            <constraint firstItem="RL6-dx-VDQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="653" id="WkN-b1-BEy"/>
-                            <constraint firstItem="hoe-Fm-kcy" firstAttribute="trailing" secondItem="RL6-dx-VDQ" secondAttribute="trailing" id="g3l-x8-ZYZ"/>
-                            <constraint firstItem="Xdx-nO-SUI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="jFj-V1-BPc"/>
-                            <constraint firstItem="gid-hk-LKx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="209" id="ndP-Jw-GpU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RL6-dx-VDQ" secondAttribute="bottom" id="v8E-ab-mzp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gid-hk-LKx" secondAttribute="trailing" constant="-23" id="vGM-wA-FfK"/>
-                            <constraint firstItem="hoe-Fm-kcy" firstAttribute="top" secondItem="Xdx-nO-SUI" secondAttribute="bottom" constant="103" id="xUu-Qf-Up5"/>
-                            <constraint firstItem="RL6-dx-VDQ" firstAttribute="top" secondItem="hoe-Fm-kcy" secondAttribute="bottom" constant="87" id="ywE-vh-NKH"/>
+                            <constraint firstItem="Xdx-nO-SUI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TM0-Dy-JxX"/>
+                            <constraint firstItem="Xdx-nO-SUI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fSr-vf-7Bh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
