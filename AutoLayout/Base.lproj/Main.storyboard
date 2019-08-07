@@ -18,18 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xdx-nO-SUI">
-                                <rect key="frame" x="43" y="85" width="329" height="303"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xdx-nO-SUI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="362"/>
                                 <color key="backgroundColor" red="0.48639786243438721" green="0.88015580177307129" blue="0.76469618082046509" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gid-hk-LKx">
-                                <rect key="frame" x="43" y="466" width="329" height="303"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gid-hk-LKx">
+                                <rect key="frame" x="0.0" y="408" width="414" height="362"/>
                                 <color key="backgroundColor" red="0.68044549226760864" green="0.15786802768707275" blue="0.84710609912872314" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gid-hk-LKx" firstAttribute="width" secondItem="Xdx-nO-SUI" secondAttribute="width" id="B4D-C0-oXe"/>
+                            <constraint firstItem="Xdx-nO-SUI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Da1-dB-wkr"/>
+                            <constraint firstItem="Xdx-nO-SUI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EGk-iG-xkZ"/>
+                            <constraint firstItem="Xdx-nO-SUI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ngr-Rf-0ha"/>
+                            <constraint firstItem="gid-hk-LKx" firstAttribute="height" secondItem="Xdx-nO-SUI" secondAttribute="height" id="o7l-ST-fbK"/>
+                            <constraint firstItem="Xdx-nO-SUI" firstAttribute="leading" secondItem="gid-hk-LKx" secondAttribute="leading" id="olC-F0-xsg"/>
+                            <constraint firstItem="gid-hk-LKx" firstAttribute="top" secondItem="Xdx-nO-SUI" secondAttribute="bottom" constant="2" id="wbt-ku-Tc7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gid-hk-LKx" secondAttribute="bottom" constant="92" id="xkH-AC-0bu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
